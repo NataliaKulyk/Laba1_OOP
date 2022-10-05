@@ -1,0 +1,78 @@
+#pragma once
+#include <math.h>
+
+class B
+{
+
+private:
+    double x;
+    double y;
+    double z;
+public:
+    B(double x, double y, double z)
+    {
+        this->x = x;
+        this->y = y;
+        this->z = z;
+    }
+
+    double calculate()
+    {
+        double result = pow((2 * z + cos(abs(y - 3x)) ^ 1 / 2);
+        result /= (2.1 + (sin ^ 2) * (abs((z ^ 3) - y)) ^ 0.2);
+        result += (log ^ 2) * (abs(z - x)) / (abs(z + y)));
+        return x * result;
+    }
+
+    double getX()
+    {
+        return x;
+    }
+    double getY()
+    {
+        return y;
+    }
+    double getZ()
+    {
+        return z;
+    }
+
+};
+
+class A : public B
+{
+
+private:
+    double b;
+
+public:
+
+    A(double x, double y, double z, double b) : B(x, y, z)
+    {
+        this->b = b;
+    }
+
+    double calculate()
+    {
+        double result = ((abs(getX()) ^ 0.43);
+        result += (exp ^ (getY() - getX()) + sqrt(abs(getY() ^ 2 + b)) ^ 0.22);
+        result /= (1 + getX() ^ 2 abs(getY() - (tan ^ 2) * z));
+        return result;
+    }
+
+    double fac(int a)
+    {
+        if (a <= 1)
+        {
+            return 1;
+        }
+
+        return fac(a - 1) * a;
+    }
+
+    double getB()
+    {
+        return b;
+    }
+
+};
