@@ -1,41 +1,52 @@
 #pragma once
 #include <math.h>
+#include <iostream>
+#include <cstdlib>
+
+
 
 class B
 {
 
 private:
-    double x;
-    double y;
-    double z;
+	double x;
+	double y;
+	double z;
+	double b;
+	
 public:
-    B(double x, double y, double z)
-    {
-        this->x = x;
-        this->y = y;
-        this->z = z;
-    }
+	B(double x, double y, double z)
+	{
+		this->x = x;
+		this->y = y;
+		this->z = z;
+	}
 
-    double calculate()
-    {
-        double result = pow((2 * z + cos(abs(y - 3x)) ^ 1 / 2);
-        result /= (2.1 + (sin ^ 2) * (abs((z ^ 3) - y)) ^ 0.2);
-        result += (log ^ 2) * (abs(z - x)) / (abs(z + y)));
-        return x * result;
-    }
+	double calculate()
+	{
+		double result = 2*z *cos(((abs(x)), 1.3)) - pow(x, 2) / 6;
+		result /= z / getB() + pow(sin(pow((y + z), 3)), 2);
+		result += pow(log(abs(pow(z, 0.6))), 2);
+		return result;
+	}
 
-    double getX()
-    {
-        return x;
-    }
-    double getY()
-    {
-        return y;
-    }
-    double getZ()
-    {
-        return z;
-    }
+	double getX()
+	{
+		return x;
+	}
+	double getY()
+	{
+		return y;
+	}
+	double getZ()
+	{
+		return z;
+	}
+	double getB()
+	{
+		return b;
+	}
+
 
 };
 
@@ -43,36 +54,28 @@ class A : public B
 {
 
 private:
-    double b;
+	double b;
 
 public:
 
-    A(double x, double y, double z, double b) : B(x, y, z)
-    {
-        this->b = b;
-    }
+	A(double x, double y, double z, double b) : B(x, y, z)
+	{
+		this-> b= b;
+	}
 
-    double calculate()
-    {
-        double result = ((abs(getX()) ^ 0.43);
-        result += (exp ^ (getY() - getX()) + sqrt(abs(getY() ^ 2 + b)) ^ 0.22);
-        result /= (1 + getX() ^ 2 abs(getY() - (tan ^ 2) * z));
-        return result;
-    }
+	double calculate()
+	{
+		
+		double result = pow(abs(getX()), 0.43);
+		result += exp(getY() - getX()) + sqrt(pow(abs(getY() * getY() + b), 0.22));
+		result /= 1 + pow(getX(), 2) * abs((getY() - (tan(getZ()), 2)));
+		return  result;
+	}
 
-    double fac(int a)
-    {
-        if (a <= 1)
-        {
-            return 1;
-        }
 
-        return fac(a - 1) * a;
-    }
-
-    double getB()
-    {
-        return b;
-    }
+	double getB()
+	{
+		return b;
+	}
 
 };
